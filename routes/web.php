@@ -44,3 +44,10 @@ Route::get('/pegawai','PegawaiController@index');
 
 Route::get('/pegawai','PegawaiController@index');
 Route::get('/pegawai/cari','PegawaiController@cari'); 
+
+Route::get('/input', 'BelajarngodingController@input');
+Route::post('/proses', 'BelajarngodingController@proses');
+Route:: get('/', function() {
+    return view ('welcome');
+ });
+Route ::get('/pegawaii', 'PegawaiiController@index');

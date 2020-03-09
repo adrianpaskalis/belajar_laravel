@@ -73,20 +73,20 @@ class PegawaiController extends Controller
 	// 	} 
 
 		
-		public function cari(Request $request)
-		{
-			// menangkap data pencarian
-			$cari = $request->cari;
+		// public function cari(Request $request)
+		// {
+		// 	// menangkap data pencarian
+		// 	$cari = $request->cari;
 
-			// mengambil data dari table pegawai sesuai pencarian data
-			$pegawai = DB::table('pegawai')
-			->where('pegawai_nama','like',"%".$cari."%")
-			->paginate();
+		// 	// mengambil data dari table pegawai sesuai pencarian data
+		// 	$pegawai = DB::table('pegawai')
+		// 	->where('pegawai_nama','like',"%".$cari."%")
+		// 	->paginate();
 
-			// mengirim data pegawai ke view index
-			return view('index',['pegawai' => $pegawai]);
+		// 	// mengirim data pegawai ke view index
+		// 	return view('index',['pegawai' => $pegawai]);
 
-		}		
+		// }		
 	}
 
 
